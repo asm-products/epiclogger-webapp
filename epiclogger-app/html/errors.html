@@ -1,0 +1,108 @@
+<script type="text/javascript">
+setMenu('errors');
+</script>
+<div class="row">
+
+	<div class="col-lg-9 col-md-8 pagecontainer" id="errorscontainer">
+		<div id="errors">
+
+			<div class="warning" onclick="loadPage('error');">
+				<div class="left">
+					<span class="page">Homepage</span>
+					<span class="events">21 occurrences</span>
+					<span class="users">7 users subscribed</span>
+				</div>
+				<div class="right">
+					<span class="last">Last occurrence</span>
+					<span class="date">Today, 21:34</span>
+				</div>
+				<div class="main">
+					<span class="error">"jQuery" is undefined</span>
+					<span class="language">Javascript - app.js 149:12</span>
+				</div>
+			</div>
+
+			<div class="error" onclick="loadPage('error');">
+				<div class="left">
+					<span class="page">Dashboard</span>
+					<span class="events">73 occurrences</span>
+					<span class="users">24 users subscribed</span>
+				</div>
+				<div class="right">
+					<span class="last">Last occurrence</span>
+					<span class="date">Today, 14:07</span>
+				</div>
+				<div class="main">
+					<span class="error">Object doesn’t support property or method “AddEventListener” Object doesn’t support property or method “AddEventListener” Object doesn’t support property or method “AddEventListener” Object doesn’t support property or method “AddEventListener” Object doesn’t support property or method “AddEventListener”</span>
+					<span class="language">Javascript - app.js 87:4</span>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="pagination">
+			<div class="row">
+				<div class="col-xs-4 side">
+
+				</div>
+				<div class="col-xs-5 buttons">
+					<a href="#" class="btn btn-default previous disabled"><span class="fa fa-chevron-left"></span></a>
+					&nbsp; 1/107 &nbsp;
+					<a href="#" class="btn btn-default next"><span class="fa fa-chevron-right"></span></a>
+				</div>
+			</div><br />
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-4 sidepanel" id="filterpanel">
+		<h4>Order by</h4>
+		<div class="panelbox">
+			<div class="form-group">
+				<select name="sortinput" id="sortinput" class="form-control">
+					<option>Last occurrence</option>
+					<option>Occurrences</option>
+					<option>Users subscribed</option>
+					<option>Page</option>
+				</select>
+			</div>
+		</div>
+		<h4>Filter</h4>
+		<div id="filterbox" class="panelbox">
+			<form class="panel panel-default">
+				<h5 data-toggle="collapse" data-target="#collapse_page">Page <span class="fa fa-chevron-down"></span></h5>
+				<div class="collapse" id="collapse_page">
+					<div class="checkbox">
+						<label><input type="checkbox" value="" />
+							Homepage
+						</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="" />
+							Dashboard
+						</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="" />
+							Settings
+						</label>
+					</div>
+				</div>
+			</form>
+
+			<form class="panel panel-default">
+				<h5 data-toggle="collapse" data-target="#collapse_os">Operating Systems <span class="open fa fa-chevron-down"></span></h5>
+				<div class="collapse" id="collapse_os">
+					<div class="checkbox">
+						<label><input type="checkbox" value="" />
+							Windows 8
+						</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="" />
+							Windows 7
+						</label>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
