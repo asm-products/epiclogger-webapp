@@ -22,7 +22,7 @@ $ ->
 
 	$(window).trigger 'resize'
 
-	loadPage 'errors'
+	loadPage 'settings_apikeys'
 
 
 window.loadPage = (pageName) ->

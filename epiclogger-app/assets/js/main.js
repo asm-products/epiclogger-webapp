@@ -26,7 +26,7 @@
       }
     });
     $(window).trigger('resize');
-    return loadPage('errors');
+    return loadPage('settings_apikeys');
   });
 
   window.loadPage = function(pageName) {
