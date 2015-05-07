@@ -26,7 +26,7 @@
       }
     });
     $(window).trigger('resize');
-    return loadPage('settings_apikeys');
+    return loadPage('account');
   });
 
   window.loadPage = function(pageName) {

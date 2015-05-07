@@ -9,7 +9,7 @@ h1, h2, h3, h4 {
 	color:#262626;
 	font-weight:500;
 }
-strong {
+strong, label, .table > tbody > tr > th {
 	font-weight:500;
 }
 .badge {
@@ -17,8 +17,8 @@ strong {
 	font-weight:500;
 	border-radius:4px;
 }
-label {
-	font-weight:400;
+.table > tbody > tr > td {
+	vertical-align:middle;
 }
 
 .btn {
@@ -50,6 +50,21 @@ label {
 	span {
 		float:left;
 		margin:3px 9px 0 0;
+	}
+}
+
+.table > tbody > tr > td > .btn.btn-sm {
+	margin-top:0;
+}
+img.profileimg {
+	border-radius:24px;
+	width:48px;
+	height:48px;
+
+	@media all and (max-width:992px){
+		float:left;
+		height:32px;
+		width:32px;
 	}
 }
 
@@ -88,18 +103,10 @@ label {
 			border:none;
 		}
 
-		img {
+		img.profileimg {
 			margin:10px;
-			border-radius:24px;
-			width:48px;
-			height:48px;
 
-			@media all and (max-width:992px){
-				float:left;
-				height:32px;
-				width:32px;
-				margin:0;
-			}
+			@media all and (max-width:992px){ margin:0; }
 		}
 
 		p {
