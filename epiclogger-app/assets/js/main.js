@@ -26,7 +26,7 @@
       }
     });
     $(window).trigger('resize');
-    return loadPage('account');
+    return loadPage('errors');
   });
 
   window.loadPage = function(pageName) {

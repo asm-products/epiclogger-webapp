@@ -22,7 +22,7 @@ $ ->
 
 	$(window).trigger 'resize'
 
-	loadPage 'account'
+	loadPage 'errors'
 
 
 window.loadPage = (pageName) ->
