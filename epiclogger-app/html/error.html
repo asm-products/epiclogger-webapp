@@ -1,0 +1,138 @@
+<script type="text/javascript">
+setMenu('errors');
+$('#permalink').on('focus', function() {
+	$(this).select();
+});
+</script>
+<div class="row" id="errordetails">
+	<div class="col-lg-9 col-md-8 pagecontainer">
+		<div class="pagetitle">
+			<h3>Error #24601</h3>
+		</div>
+		<button class="btn btn-primary pull-right"><span class="fa fa-star"></span> Assign task</button>
+		<button class="btn btn-primary pull-right"><span class="fa fa-check"></span> Mark resolved</button>
+		<button class="btn btn-success disabled pull-right"><span class="fa fa-check"></span> Resolved</button>
+
+		<div class="clearfix"></div><br />
+		<div class="panel panel-default codeview">
+			<div class="panel-heading">Exception</div>
+			<div class="panel-body">
+				<p><strong>Expected ")"</strong> in app.js 20:33</p>
+				<div class="codepanel">
+					<span class="line">16. function helloWorld() {</span>
+					<span class="line">17.     // Say hello world until the user starts questioning</span>
+					<span class="line">18.     // the meaningfulness of their existence.</span>
+					<span class="line">19.     for (var i = 42; --i >= 0;) {</span>
+					<span class="line error">20.         alert('Hello ' + String(world)<span class="char">;</span></span>
+					<span class="line">21.     }</span>
+					<span class="line">22. }</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">Update</div>
+			<div class="panel-body">
+				<form>
+					<div class="form-group">
+						<label for="subscriber_update">Send an update to 27 subscribers</label>
+						<textarea id="subscriber_update" class="form-control" rows="3"></textarea>
+					</div>
+					<div class="row">
+						<div class="col-md-9 col-xs-7">
+							<div class="checkbox">
+								<label><input type="checkbox" value="" />
+									Notify users by email
+								</label>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-5">
+							<button class="btn btn-primary pull-right"><span class="fa fa-paper-plane"></span> Send</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">Stream</div>
+			<div id="activitystream">
+				<p class="resolved">
+					<span class="time">14:12</span>
+					<span class="activity">Error marked resolved by <strong>woubuc</strong></span>
+				</p>
+				<p class="user">
+					<span class="time">12:52</span>
+					<span class="activity">Anonymous user subscribed to this error</span>
+				</p>
+				<p class="error">
+					<span class="time">12:52</span>
+					<span class="activity">Error occured on <strong>Homepage</strong></span>
+				</p>
+				<p class="error">
+					<span class="time">12:37</span>
+					<span class="activity">Error occured on <strong>Homepage</strong></span>
+				</p>
+				<p class="user">
+					<span class="time">11:15</span>
+					<span class="activity">User woubuc subscribed to this error</span>
+				</p>
+				<p class="error">
+					<span class="time">11:14</span>
+					<span class="activity">Error occured on <strong>Homepage</strong></span>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-3 col-md-4 sidepanel">
+		<h4>Details</h4>
+		<div class="panelbox propertybox">
+			<p><strong>First occurrence:</strong> 21/04 (two weeks ago)</p>
+			<p><strong>Last occurrence:</strong> 11:18 (one hour ago)</p>
+		</div>
+		<div class="panelbox propertybox">
+			<p><strong>Level:</strong> Error</p>
+			<p><strong>Logger:</strong> Javascript</p>
+		</div>
+		<div class="panelbox propertybox">
+			<p><strong>Pages:</strong>
+				Homepage <span class="badge">52</span><br />
+				Sign Up <span class="badge">9</span>
+			</p>
+		</div>
+		<div class="panelbox propertybox">
+			<p><strong>Browsers:</strong>
+				Google Chrome <span class="badge">24</span><br />
+				Internet Explorer <span class="badge">20</span><br />
+				Mozilla Firefox <span class="badge">17</span>
+			</p>
+		</div>
+		<div class="panelbox propertybox faces">
+			<p><strong>Subscribed users:</strong>
+				<img src="http://lorempixel.com/48/48/people/1" />
+				<img src="http://lorempixel.com/48/48/people/2" />
+				<img src="http://lorempixel.com/48/48/people/3" />
+				<img src="http://lorempixel.com/48/48/people/4" />
+				<img src="http://lorempixel.com/48/48/people/5" />
+				<img src="http://lorempixel.com/48/48/people/6" />
+				<img src="http://lorempixel.com/48/48/people/7" />
+				<img src="http://lorempixel.com/48/48/people/6" />
+				<img src="http://lorempixel.com/48/48/people/7" />
+				<img src="http://lorempixel.com/48/48/people/8" />
+				<img src="http://lorempixel.com/48/48/people/9" />
+				<img src="http://lorempixel.com/48/48/people/10" />
+				<img src="http://lorempixel.com/48/48/people/1" />
+				<img src="http://lorempixel.com/48/48/people/7" />
+				<img src="http://lorempixel.com/48/48/people/6" />
+				<span>+ 12 anonymous</span>
+			</p>
+		</div>
+		<div class="panelbox propertybox inputs">
+			<p><strong>Public URL:</strong>
+				<input class="form-control input-sm" id="permalink" type="text" value="http://epiclogger.io/error/24601" />
+				<a href="#" class="btn btn-primary btn-sm btn-block">Disable public access</a>
+			</p>
+		</div>
+	</div>
+</div>
