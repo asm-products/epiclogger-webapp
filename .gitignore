@@ -1,2 +1,6 @@
 epiclogger-homepage/prepros.cfg
 epiclogger-app/prepros.cfg
+default.css.map
+.DS_Store
+.sass-cache/
+node_modules/

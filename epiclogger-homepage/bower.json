@@ -1,0 +1,17 @@
+{
+  "name": "epiclogger-homepage",
+  "version": "0.0.0",
+  "homepage": "https://github.com/yokosogithub/epiclogger-webapp",
+  "authors": [
+    "Rabo Tse <xiepeng1992@gmail.com>"
+  ],
+  "description": "epiclogger homepage",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
